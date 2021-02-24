@@ -11,7 +11,7 @@ opt.add_experimental_option("prefs", { \
 "profile.default_content_setting_values.notifications": 1
 })
 
-driver = webdriver.Chrome(executable_path="C:\Program Files (x86)\chromedriver.exe")
+driver = webdriver.Chrome(chrome_options=opt,executable_path="C:\Program Files (x86)\chromedriver.exe")
 driver.get("https://accounts.google.com/AccountChooser/identifier?continue=https%3A%2F%2Fclassroom.google.com%2Fu%2F0%2Fh&flowName=GlifWebSignIn&flowEntry=AddSession")
 
 
